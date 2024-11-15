@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 
 body {
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     color: blueviolet;
 }
@@ -19,7 +19,7 @@ header {
 }
 
  .Gaming_Store img {
-    width: 20px;
+    width: 120px;
 }
 
 ul { 
@@ -62,10 +62,9 @@ h2 {
     background-color: white;
     padding: 20px;
     width: 30%;
-    box-shadow: 0 4 px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px black;
     border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    text-align: center;    
 }
 
 .Productos-img {
@@ -88,8 +87,65 @@ h3 {
 }
 
 i {
-    font-size: 14px;
+    font-size: 15px;
     color: black;
     margin-bottom: 15px;
 }
+
+.agregar {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.Juego {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 8px black;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.juego h2 {
+    font-size: 24px;
+    color: grey;
+}
+
+.Juego-seleccionado {
+    margin-bottom: 20px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.boton_pago {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+
 
