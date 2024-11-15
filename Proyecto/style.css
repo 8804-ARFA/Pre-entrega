@@ -6,20 +6,24 @@ box-sizing: border-box;
 
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
     color: blueviolet;
+    background: url(img_proyecto/img_fondo/fondo.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 header { 
     background-color: black;
     color: blueviolet;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
  .Gaming_Store img {
-    width: 120px;
+    width: 100%px;
+   
 }
 
 ul { 
@@ -141,7 +145,7 @@ i {
 }
 
 footer {
-    background-color: blueviolet;
+    background-color: black;
     color: white;
     padding: 40px;
     text-align: center;
