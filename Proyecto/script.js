@@ -62,3 +62,17 @@ const ProductosXBOX = [
 
 ]
 
+function mostrarProductos (seccion, productos){
+    const contenedor = document.querySelector(`#${seccion}`) .lista-de-productos`);
+    contenedor.innerHTML = ''; 
+
+    productos.forEach(producto => {
+        const productoDiv = document.createElement('div');
+        productoDiv.classList.add('productos');
+        
+        productoDiv.innerHTML = `})
+
+
+
+
+}
