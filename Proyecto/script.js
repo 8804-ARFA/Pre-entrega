@@ -121,7 +121,9 @@ ProductosConsole();
 
 function ProductosHTML(){
 
-    const main = document.querySelector('main');
+    const main = document.querySelector('.lista-de-productos');
+
+    main.innerHTML = '';
 
     const TodoslosProductos = [...ProductosPS4, ...ProductosPS5, ...ProductosPC, ...ProductosXBOX];
 
@@ -137,7 +139,7 @@ function ProductosHTML(){
         <img src="${juego.imagen}" alt="${juego.nombre}" class="Productos-img" />
         <h3>${juego.nombre}</h3>
         <span class="precio">${juego.precio}</span>
-        <button class="agregar" data-id="${juego.id}">Comprar</button>
+        <button class="agregar" data-id="${juego.id}">Agregar</button>
         <div id="descripcion-${juego.id}" class="descripcion"></div>
         `;
 
@@ -147,6 +149,9 @@ function ProductosHTML(){
 
 
 }
+
+
+
 
 
 
