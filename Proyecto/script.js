@@ -1,3 +1,38 @@
+
+//Para el formulario
+
+function validarDatos () {
+
+    const Apellido_y_Nombre = document.querySelector('#Apellido_y_Nombre').value;
+
+    const Correo_Electronico = document.querySelector('#Correo_Electronico').value;
+
+    const Contraseña = document.querySelector('#Contraseña').value;
+
+    if (!Apellido_y_Nombre || !Correo_Electronico || !Contraseña) {
+
+        console.log("Vuelva a intentarlo");
+    } else {
+
+        console.log("Se a completado con exito");
+    }
+}
+
+document.querySelector('#Formulario').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+    formularioCompletado();
+});
+
+
+
+//Productos 
+
+
+
+
+//array
+
 const ProductosPS4 = [
 
     {
@@ -62,17 +97,21 @@ const ProductosXBOX = [
 
 ]
 
-function mostrarProductos (seccion, productos){
-    const contenedor = document.querySelector(`#${seccion}`) .lista-de-productos`);
-    contenedor.innerHTML = ''; 
+function MostrarProductos(){
 
-    productos.forEach(producto => {
-        const productoDiv = document.createElement('div');
-        productoDiv.classList.add('productos');
-        
-        productoDiv.innerHTML = `})
+    const TodoslosProductos = [ProductosPS4, roductosPS5, ProductosPC, ProductosXBOX];
+
+    TodoslosProductos.forEach(function(Juego)) {
+
+        console.log(`id: ${juego.id}`);
+        console.log(`Nombre: ${juego.Nombre}`);
+        console.log(`Precio: ${juego.Precio}`);
+        console.log(`Imagen: ${juego.Imagen}`);
 
 
 
-
+    }
 }
+
+
+
