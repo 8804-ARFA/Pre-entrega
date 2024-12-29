@@ -28,11 +28,6 @@ document.querySelector('#Formulario').addEventListener('submit', function(e) {
 
 //Productos 
 
-
-
-
-//array
-
 const ProductosPS4 = [
 
     {
@@ -99,18 +94,58 @@ const ProductosXBOX = [
 
 function MostrarProductos(){
 
-    const TodoslosProductos = [ProductosPS4, roductosPS5, ProductosPC, ProductosXBOX];
+    const TodoslosProductos = [...ProductosPS4, ...ProductosPS5, ...ProductosPC, ...ProductosXBOX];
 
-    TodoslosProductos.forEach(function(Juego)) {
+    TodoslosProductos.forEach(function(juego) {
 
         console.log(`id: ${juego.id}`);
-        console.log(`Nombre: ${juego.Nombre}`);
-        console.log(`Precio: ${juego.Precio}`);
-        console.log(`Imagen: ${juego.Imagen}`);
+        console.log(`nombre: ${juego.nombre}`);
+        console.log(`precio: ${juego.precio}`);
+        console.log(`imagen: ${juego.imagen}`);
+
+    });
+}
+
+function ProductosConsole() {
+
+    MostrarProductos();
+
+}
+
+ProductosConsole();
 
 
 
-    }
+
+
+
+function ProductosHTML(){
+
+    const main = document.querySelector('main');
+
+    const TodoslosProductos = [...ProductosPS4, ...ProductosPS5, ...ProductosPC, ...ProductosXBOX];
+
+    TodoslosProductos.forEach(function(juego){
+
+        const ProductoJuego = document.createElement('div');
+              
+        ProductoJuego.classList.add('Productos');
+              
+        ProductoJuego.setAttribute('data-id', juego.id);
+              
+        ProductoJuego.innerHTML = `
+        <img src="${juego.imagen}" alt="${juego.nombre}" class="Productos-img" />
+        <h3>${juego.nombre}</h3>
+        <span class="precio">${juego.precio}</span>
+        <button class="agregar" data-id="${juego.id}">Comprar</button>
+        <div id="descripcion-${juego.id}" class="descripcion"></div>
+        `;
+
+        main.appendChild(ProductoJuego);
+
+    });
+
+
 }
 
 
