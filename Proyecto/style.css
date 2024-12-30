@@ -17,18 +17,32 @@ body {
 header { 
     background-color: black;
     color: blueviolet;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 5px 10%;
+    
 }
 
  .Gaming_Store img {
-    width: 50%;
+    height: 150px;
+    width: auto;
+    cursor: pointer;
+   transition: all 0.3s;
+    
    
+}
+
+header .Gaming_Store img:hover {
+
+    transform: scale(1.2);
 }
 
 ul { 
     list-style-type: none;
     margin: 10px;
+    padding-left: 0;
 }
 
 ul li {
@@ -60,15 +74,22 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .Productos { 
     background-color: white;
     padding: 20px;
-    width: 30%;
+    flex: 1 1 30%;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    text-align: center;    
+    text-align: center;
+    transition: transform 0.3s ease-in-out;   
+}
+
+.Productos:hover {
+
+    transform: scale(1.05);
 }
 
 .Productos-img {
@@ -113,7 +134,7 @@ i {
     background-color: blueviolet;
 }
 
-.Juego {
+.juego {
     background-color: white;
     padding: 20px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
@@ -126,7 +147,7 @@ i {
     color: grey;
 }
 
-.Juego-seleccionado {
+.juego-seleccionado {
     margin-bottom: 20px;
 }
 
@@ -151,6 +172,16 @@ i {
 .boton_pago:hover {
 
     background-color: purple;
+}
+
+#Formulario {
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .Registro {
@@ -201,5 +232,91 @@ footer {
     text-align: center;
 }
 
+footer iframe {
 
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+}
+
+
+@media (max-width: 768px) {
+
+    .Productos {
+        flex: 1 1 45%;
+    }
+
+    footer iframe {
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #Formulario .Registro {
+
+        width: 90%;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+
+
+    .lista-de-productos{
+
+        justify-content: center;
+
+    }
+
+    .Productos {
+        flex: 1 1 100%; 
+
+
+    }
+
+    h2, h3, .precio {
+
+
+        font-size: 16px; 
+
+    }
+
+    .agregar {
+
+
+        font-size: 14px;
+
+
+    }
+
+    button {
+
+
+        width: 100%; 
+
+
+    }
+}
+
+.navbar {
+
+    background-color: black !important;
+
+}
+
+.navbar .nav-link {
+
+    color: blueviolet;
+    font-weight: bold;
+
+}
+
+.navbar .nav-link:hover {
+
+    color: purple;
+}
 
