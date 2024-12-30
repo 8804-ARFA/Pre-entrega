@@ -320,3 +320,28 @@ footer iframe {
     color: purple;
 }
 
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #555;
+}
